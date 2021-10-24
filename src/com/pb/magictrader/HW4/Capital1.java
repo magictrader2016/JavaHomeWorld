@@ -1,8 +1,14 @@
 package com.pb.magictrader.HW4;
+import java.util.Scanner;
 
-public class CapitalLetter {
+public class Capital1 {
+    private static Scanner sc;
     public static void main(String[] args) {
-        String[] tests = {"try it on me", "what about me, huh?", "my name is vasya. london is the capital of great-britain!"};
+        Scanner input = new Scanner(System.in);
+        System.out.println("ENTER TEXT:");
+
+        String[] tests = {"try it on me"};
+
         for (String s : tests) {
             System.out.println(toUp(s));
         }
