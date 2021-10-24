@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Aray {
     public static void main(String args[]){
+        int counter[];
         Scanner scanner = new Scanner(System.in);
         int[] array = new int[10];
         int sum = 0;
@@ -28,7 +29,7 @@ public class Aray {
                     array[i] = array[i + 1];
                     array[i + 1] = temp;
                     sorted = false;
-                    System.out.println("SORT INCREASING ORDER:" +array);
+                    System.out.println("SORT INCREASING ORDER:" + Arrays.toString(array));
                 }
 
             }
