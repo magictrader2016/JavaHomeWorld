@@ -20,7 +20,7 @@ public class Aray {
         System.out.println("ELEMENTS TOTAL:" + sum);
 
         for(int i = 0; i < array.length; ++i) {
-            sum = sum+i;
+            sum = sum+array[i];
         }
         System.out.println("POSITIVE TOTAL:" + sum);
 
