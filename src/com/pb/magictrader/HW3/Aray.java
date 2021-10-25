@@ -15,8 +15,14 @@ public class Aray {
         }
         for( int num : array) {
             sum = sum+num;
+
         }
         System.out.println("ELEMENTS TOTAL:" + sum);
+
+        for(int i = 0; i < array.length; ++i) {
+            sum = sum+i;
+        }
+        System.out.println("POSITIVE TOTAL:" + sum);
 
 
         boolean sorted = false;
