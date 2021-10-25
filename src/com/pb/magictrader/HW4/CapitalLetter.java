@@ -1,20 +1,17 @@
 package com.pb.magictrader.HW4;
+
 import java.util.Scanner;
 
-public class Capital1 {
-    private static Scanner sc;
+public class CapitalLetter {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("ENTER PHRASE: ");
+        String s = in.nextLine();
+        System.out.println(capitalize(s) );
         String first = in.nextLine().toUpperCase();
-        String[] tests = {"XXXX"};
-
-        for (String s : tests) {
-            System.out.println(toUp(s));
-        }
     }
 
-    static String toUp(String s){
+    static String capitalize(String s){
         char[] arr = s.toCharArray();
         boolean inWord = false;
         for (int i = 0; i< arr.length; i++) {
