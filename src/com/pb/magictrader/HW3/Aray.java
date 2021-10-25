@@ -19,10 +19,22 @@ public class Aray {
         }
         System.out.println("ELEMENTS TOTAL:" + sum);
 
-        for(int i = 0; i < array.length; ++i) {
-            sum = sum+array[i];
+        int negative = 0;
+        long summ = 0L;
+        int positive = 0;
+        for(int i : array) {
+            if(i < 0) negative++;
+            if(i > 0) {
+                positive++;
+                try {
+                    summ += i;
+                } catch (ArrayIndexOutOfBoundsException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-        System.out.println("POSITIVE DIGITS:" + sum);
+        System.out.println();
+        System.out.println("POSITIVE DIGITS NUMBER: " + positive);
 
 
         boolean sorted = false;
