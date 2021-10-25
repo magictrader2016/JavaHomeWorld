@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class Capital1 {
     private static Scanner sc;
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
         System.out.println("ENTER TEXT:");
-
-        String[] tests = {"try it on me"};
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+        String[] tests = scan.nextInt();
 
         for (String s : tests) {
             System.out.println(toUp(s));

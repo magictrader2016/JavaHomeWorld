@@ -19,7 +19,7 @@ public class Anagram {
     private static String isAnagram(String first, String second) {
         if (first == null || second == null || first.equals("") || second.equals("") || !first.matches("[A-Za-z,. ]+")
                 || !second.matches("[A-Za-z,. ]+")) {
-            return "No anagram.";
+            return "NO ANAGRAM";
         }
         String answer = "";
 
@@ -27,7 +27,7 @@ public class Anagram {
         String nd = second.replaceAll("[,. ]+", "");
 
         if (st.equals("") || nd.equals("")) {
-            return "No anagram.";
+            return "NO ANAGRAM";
         }
 
         char[] arraySt = st.toCharArray();
@@ -36,9 +36,9 @@ public class Anagram {
         Arrays.sort(arrayNd);
 
         if (Arrays.equals(arraySt, arrayNd)) {
-            answer = "Anagram.";
+            answer = "ANAGRAM";
         } else {
-            answer = "No anagram.";
+            answer = "NO ANAGRAM";
         }
         return answer;
     }
