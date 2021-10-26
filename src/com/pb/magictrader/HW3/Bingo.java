@@ -15,6 +15,8 @@ public class Bingo {
                 UserNumber = input.nextInt();
                 if (UserNumber > UnknownNumber)
                     System.out.println("NUMBER IS LESS.");
+                if (UserNumber < 0)
+                    break;
                 else if (UserNumber < UnknownNumber) System.out.println("NUMBER IS MORE.");	else System.out.println("YOU GUESSED!");
             } while (UserNumber != UnknownNumber);
             System.out.println("TRYSCOUNT: " + TrysCount);
