@@ -7,7 +7,7 @@ public class Bingo {
         int UnknownNumber, UserNumber, TrysCount = 10;
         Scanner input = new Scanner(System.in);
         System.out.println("GUESS NUMBER FROM 0 TO 100. YOU HAVE MAX 10 STEPS");
-        System.out.println("TYPE ext TO STOP");
+        System.out.println("TYPE NEGATIVE DIGIT TO STOP");
             UnknownNumber = (int)Math.floor(Math.random() * 100);
             do {
                 TrysCount++;
